@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
+import { Product } from './models/product.model';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'my-store-components';
+  imgParent = '';
+
+  onLoaded(img: string) {
+    console.log('log del padre', img);
+  }
 }
